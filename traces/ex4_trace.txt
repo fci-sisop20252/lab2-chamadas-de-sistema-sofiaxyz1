@@ -1,0 +1,30 @@
+close(3)                                = 0
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+close(3)                                = 0
+write(1, "=== Exerc\303\255cio 4: C\303\263pia de Arqu"..., 40) = 40
+write(1, "Copiando: dados/origem.txt -> da"..., 48) = 48
+write(1, "\n", 1)                       = 1
+read(3, "Este \303\251 o arquivo de origem para"..., 256) = 256
+write(4, "Este \303\251 o arquivo de origem para"..., 256) = 256
+read(3, "rar\ncomo o programa se comporta "..., 256) = 256
+write(4, "rar\ncomo o programa se comporta "..., 256) = 256
+read(3, "er\303\243o necess\303\241rias.\n\nObserve no "..., 256) = 256
+write(4, "er\303\243o necess\303\241rias.\n\nObserve no "..., 256) = 256
+read(3, ", rsync, backup, etc.\n\nQuando te"..., 256) = 256
+write(4, ", rsync, backup, etc.\n\nQuando te"..., 256) = 256
+read(3, "rno das syscalls\n- Feche file de"..., 256) = 256
+write(4, "rno das syscalls\n- Feche file de"..., 256) = 256
+read(3, "mado: 1200 bytes.\nCom buffer de "..., 256) = 84
+write(4, "mado: 1200 bytes.\nCom buffer de "..., 84) = 84
+read(3, "", 256)                        = 0
+close(3)                                = 0
+close(4)                                = 0
+write(1, "\n", 1)                       = 1
+write(1, "=== Estat\303\255sticas ===\n", 22) = 22
+write(1, "Bytes copiados: 1364\n", 21)  = 21
+write(1, "Opera\303\247\303\265es: 12\n", 16) = 16
+write(1, "Tempo: 0.000635 segundos\n", 25) = 25
+write(1, "Throughput: 2097.69 KB/s\n", 25) = 25
+write(1, "\n", 1)                       = 1
+write(1, "Verifica\303\247\303\243o: diff dados/origem"..., 55) = 55
++++ exited with 0 +++

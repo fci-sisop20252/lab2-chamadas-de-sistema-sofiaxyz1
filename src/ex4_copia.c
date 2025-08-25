@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <time.h>
+#include <errno.h>
 
 #define BUFFER_SIZE 256
 

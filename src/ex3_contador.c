@@ -10,12 +10,16 @@
  * 4. Observe: strace -e read ./ex3_contador
  */
 
+/*
+ * Exercício 3 - Contador de Linhas com Loop
+ */
+
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <time.h>
 
-#define BUFFER_SIZE 64   // Buffer pequeno para forçar múltiplas leituras
+#define BUFFER_SIZE 64   // pode alterar para 16, 64, 256, 1024
 
 int main() {
     char buffer[BUFFER_SIZE];
@@ -43,9 +47,7 @@ int main() {
     while ( (bytes_lidos = read(fd, buffer, BUFFER_SIZE)) > 0 ) {
         total_reads++;
         
-        /*
-         * TODO 2: Contar caracteres '\n' no buffer
-         */
+        // Contar quebras de linha
         for (int i = 0; i < bytes_lidos; i++) {
             if (buffer[i] == '\n') {
                 total_linhas++;
@@ -87,7 +89,7 @@ int main() {
                (double)total_caracteres / total_reads);
     }
     
-    printf("\nExecute: strace -c ./ex3_contador\n");
+    printf("\nExecute: strace -c ./ex3_contador dados/teste2.txt\n");
     
     return 0;
 }
